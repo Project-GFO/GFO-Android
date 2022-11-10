@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "375600898728",
+    "project_id": "project-gfo",
+    "storage_bucket": "project-gfo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375600898728:android:fe59f00fba2f548570d89d",
+        "android_client_info": {
+          "package_name": "com.msg.gfo_v2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "375600898728-l63ug7n20tpi5vtkjnfvf6rehnss5ig7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhCnjb5oqBi8h8kvDq2azF9preU9IucHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "375600898728-l63ug7n20tpi5vtkjnfvf6rehnss5ig7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
