@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">GFO-v2</string>
-    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_intro">IntroActivity</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">회원가입</string>

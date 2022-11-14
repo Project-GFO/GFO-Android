@@ -18,17 +18,27 @@
 
         <activity
             android:name=".gfo.ui.component.intro.IntroActivity"
-            android:exported="false"
-            android:label="@string/title_activity_login" />
-        <activity
-            android:name=".gfo.ui.component.main.MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:label="@string/title_activity_intro" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+        <activity
+            android:name=".gfo.ui.component.main.MainActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".gfo.ui.component.login.LoginActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".gfo.ui.component.register.RegisterActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
