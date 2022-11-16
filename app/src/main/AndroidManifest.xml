@@ -39,6 +39,8 @@
         <activity
             android:name=".gfo.ui.component.register.RegisterActivity"
             android:exported="false" />
+        <activity android:name=".gfo.ui.component.login.FindPasswordActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
