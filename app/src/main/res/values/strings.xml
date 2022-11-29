@@ -12,4 +12,11 @@
     <string name="login_failed">"Login failed"</string>
     <string name="go_back">이전으로 돌아가기</string>
     <string name="confirm">확인</string>
-</resources>
+    <string name="et_id">아이디를 입력해주세요.</string>
+    <string name="et_password">비밀번호를 입력해주세요.</string>
+    <string name="gsm_">GSM의 \n모든 정보를\n공유하다</string>
+    <string name="forgot_password">비밀번호를 잊으셨나요?</string>
+    <string name="member_ask">아직 회원이 아니신가요?</string>
+    <string name="auto_login">자동로그인</string>
+    <string name="save_id">아이디저장</string>
+    </resources>
