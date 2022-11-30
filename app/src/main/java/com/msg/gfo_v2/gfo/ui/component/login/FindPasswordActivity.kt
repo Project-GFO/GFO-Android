@@ -8,6 +8,7 @@ import com.msg.gfo_v2.gfo.ui.base.BaseActivity
 
 class FindPasswordActivity : BaseActivity<ActivityFindPasswordBinding>(R.layout.activity_find_password) {
     override fun viewSetting() {
+        binding.goBack = this
         onConfirmBtnClicked()
     }
 

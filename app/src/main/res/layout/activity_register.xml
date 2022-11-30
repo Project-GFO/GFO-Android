@@ -4,31 +4,262 @@
 
     <data>
 
+        <variable
+            name="goBack"
+            type="com.msg.gfo_v2.gfo.ui.component.register.RegisterActivity" />
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/registerContainer"
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/g_tv_regist_t"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            app:layout_constraintTop_toBottomOf="@id/btn_goBack"
-            app:layout_constraintBottom_toTopOf="@id/btn_confirm"/>
+            android:layout_height="0.5dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.048" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/g_gfo_t"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.167" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/g_et_name_t"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.392" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/g_et_email_t"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.478" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/g_et_password_t"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.564" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/g_et_password_re_t"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.65" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/g_btn_register_t"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.774" />
 
-        <Button
-            android:id="@+id/btn_goBack"
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/g_tv_regist_b"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="@string/go_back"
-            app:layout_constraintTop_toTopOf="parent" />
-        <Button
-            android:id="@+id/btn_confirm"
+            android:layout_height="0.5dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.078" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/g_gfo_b"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="@string/confirm"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            android:layout_height="0.5dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.34" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/g_et_name_b"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.459" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/g_et_email_b"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.545" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/g_et_password_b"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.631" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/g_et_password_re_b"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.717" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/g_btn_register_b"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.841" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/g_tv_regist_s"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.119" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/g_et_s"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.058" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/g_tv_regist_e"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.313" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/g_back_e"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.107" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/g_gfo_e"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="1" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/g_et_e"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.947" />
+
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="0dp"
+            android:text="@string/action_sign_in"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/notosans"
+            app:layout_constraintTop_toTopOf="@id/g_tv_regist_t"
+            app:layout_constraintBottom_toBottomOf="@id/g_tv_regist_b"
+            app:layout_constraintStart_toStartOf="@id/g_tv_regist_s"
+            app:layout_constraintEnd_toEndOf="@id/g_tv_regist_e"/>
+        <TextView
+            android:id="@+id/gsm_gfo_"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/gfo_start"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/notosans"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/g_gfo_t"
+            app:layout_constraintBottom_toBottomOf="@id/g_gfo_b"
+            app:layout_constraintStart_toStartOf="@id/g_et_s"
+            app:layout_constraintEnd_toEndOf="@id/g_gfo_e" />
+        
+        <View
+            android:id="@+id/btn_back"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/ic_left_arrow_svgrepo_com"
+            android:onClick="@{goBack::onClickPageBtn}"
+            app:layout_constraintTop_toTopOf="@id/g_tv_regist_t"
+            app:layout_constraintBottom_toBottomOf="@id/g_tv_regist_b"
+            app:layout_constraintStart_toStartOf="@id/g_et_s"
+            app:layout_constraintEnd_toEndOf="@id/g_back_e" />
+        
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/action_sign_in"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/notosans"
+            android:textStyle="bold"
+            android:background="@drawable/btn_login"
+            app:layout_constraintTop_toTopOf="@id/g_btn_register_t"
+            app:layout_constraintBottom_toBottomOf="@id/g_btn_register_b"
+            app:layout_constraintStart_toStartOf="@id/g_et_s"
+            app:layout_constraintEnd_toEndOf="@id/g_et_e" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="@string/et_name"
+            android:textSize="14sp"
+            android:textColorHint="#999999"
+            android:textColor="@color/black"
+            android:fontFamily="@font/notosans"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            app:layout_constraintTop_toTopOf="@id/g_et_name_t"
+            app:layout_constraintBottom_toBottomOf="@id/g_et_name_b"
+            app:layout_constraintStart_toStartOf="@id/g_et_s"
+            app:layout_constraintEnd_toEndOf="@id/g_et_e" />
+        <EditText
+            android:id="@+id/g_et_email"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="@string/et_email"
+            android:textSize="14sp"
+            android:textColorHint="#999999"
+            android:textColor="@color/black"
+            android:fontFamily="@font/notosans"
+            android:inputType="textEmailAddress"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            app:layout_constraintTop_toTopOf="@id/g_et_email_t"
+            app:layout_constraintBottom_toBottomOf="@id/g_et_email_b"
+            app:layout_constraintStart_toStartOf="@id/g_et_s"
+            app:layout_constraintEnd_toEndOf="@id/g_et_e" />
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="@string/et_password"
+            android:textSize="14sp"
+            android:textColorHint="#999999"
+            android:textColor="@color/black"
+            android:fontFamily="@font/notosans"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            app:layout_constraintTop_toTopOf="@id/g_et_password_t"
+            app:layout_constraintBottom_toBottomOf="@id/g_et_password_b"
+            app:layout_constraintStart_toStartOf="@id/g_et_s"
+            app:layout_constraintEnd_toEndOf="@id/g_et_e" />
+        <EditText
+            android:id="@+id/et_password_re"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="@string/et_password_re"
+            android:textSize="14sp"
+            android:textColorHint="#999999"
+            android:textColor="@color/black"
+            android:fontFamily="@font/notosans"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            app:layout_constraintTop_toTopOf="@id/g_et_password_re_t"
+            app:layout_constraintBottom_toBottomOf="@id/g_et_password_re_b"
+            app:layout_constraintStart_toStartOf="@id/g_et_s"
+            app:layout_constraintEnd_toEndOf="@id/g_et_e" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -15,8 +15,9 @@
         <item name="windowNoTitle">true</item>
     </style>
     <style name="some_et">
+        <item name="fontFamily">notosans</item>
         <item name="android:textSize">14sp</item>
-        <item name="android:textColor">#999999</item>
+        <item name="android:textColorHint">#999999</item>
     </style>
     <style name="gsm_">
         <item name="android:textSize">68px</item>

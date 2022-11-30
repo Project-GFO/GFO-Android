@@ -12,7 +12,7 @@ import com.msg.gfo_v2.gfo.ui.component.register.RegisterActivity
 class LoginActivity : BaseActivity<ActivityLoginBinding>(R.layout.activity_login) {
 
     override fun viewSetting() {
-
+        binding.login = this
     }
 
     override fun observeEvent() {
