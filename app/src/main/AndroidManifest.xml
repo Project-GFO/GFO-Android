@@ -40,6 +40,9 @@
         <activity
             android:name=".gfo.ui.component.login.FindPasswordActivity"
             android:exported="false" />
+        <activity
+            android:name=".gfo.ui.component.login.ResetPasswordActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
