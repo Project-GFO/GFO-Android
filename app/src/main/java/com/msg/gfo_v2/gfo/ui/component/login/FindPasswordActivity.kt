@@ -10,6 +10,7 @@ class FindPasswordActivity : BaseActivity<ActivityFindPasswordBinding>(R.layout.
     override fun viewSetting() {
         binding.goBack = this
         onConfirmBtnClicked()
+        // test
     }
 
     override fun observeEvent() {
