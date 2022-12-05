@@ -17,18 +17,6 @@ class IntroActivity : BaseActivity<ActivityIntroBinding>(R.layout.activity_intro
 
     }
 
-    fun onClickPageBtn(view: View) {
-        lateinit var act: Class<*>
-        when(view.id){
-            binding.btnLogin.id -> {
-                act = LoginActivity::class.java
-            }
-            binding.btnSign.id -> {
-                act = RegisterActivity::class.java
-            }
-        }
-        val intent = Intent(this, act)
-        startActivity(intent)
-    }
+
 
 }

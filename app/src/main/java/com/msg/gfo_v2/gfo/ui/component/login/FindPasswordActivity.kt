@@ -17,11 +17,10 @@ class FindPasswordActivity : BaseActivity<ActivityFindPasswordBinding>(R.layout.
     }
 
     fun onClickPageBtn(view : View){
-        val intent = Intent(this, LoginActivity::class.java)
-        startActivity(intent)
+        finish()
     }
 
-    fun onConfirmBtnClicked() {
+    private fun onConfirmBtnClicked() {
         binding.btnConfirm.setOnClickListener {
             emailCheck()
             startActivity(Intent(this, ResetPasswordActivity::class.java))
