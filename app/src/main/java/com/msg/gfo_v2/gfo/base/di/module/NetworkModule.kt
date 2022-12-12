@@ -1,6 +1,6 @@
 package com.msg.gfo_v2.gfo.base.di.module
 
-import com.msg.gfo_v2.gfo.data.remote.network.CommonAPI
+import com.msg.gfo_v2.gfo.data.remote.network.AuthAPI
 import com.msg.gfo_v2.gfo.data.remote.network.LoginInterceptor
 import dagger.Module
 import dagger.Provides
@@ -46,7 +46,7 @@ object NetworkModule {
     }
 
     @Provides
-    fun provideCommonService(retrofit: Retrofit): CommonAPI{
-        return retrofit.create(CommonAPI::class.java)
+    fun provideCommonService(retrofit: Retrofit): AuthAPI{
+        return retrofit.create(AuthAPI::class.java)
     }
 }

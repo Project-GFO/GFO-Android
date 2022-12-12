@@ -3,13 +3,13 @@ package com.msg.gfo_v2.gfo.data.remote.datasource
 import com.msg.gfo_v2.gfo.data.remote.dto.datasource.auth.request.CodeIssuanceRequest
 import com.msg.gfo_v2.gfo.data.remote.dto.datasource.auth.request.RegisterRequest
 import com.msg.gfo_v2.gfo.data.remote.dto.datasource.auth.response.RegisterResponse
-import com.msg.gfo_v2.gfo.data.remote.network.CommonAPI
+import com.msg.gfo_v2.gfo.data.remote.network.AuthAPI
 import retrofit2.Response
 import javax.inject.Inject
 
-class CommonDataSourceImpl @Inject constructor(
-    private val service: CommonAPI
-) : CommonDataSource {
+class AuthDataSourceImpl @Inject constructor(
+    private val service: AuthAPI
+) : AuthDataSource {
     override suspend fun postRegistration(body: RegisterRequest): Response<RegisterResponse> {
         return service.postRegistration(body)
     }

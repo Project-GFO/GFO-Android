@@ -5,7 +5,7 @@ import com.msg.gfo_v2.gfo.data.remote.dto.datasource.auth.request.RegisterReques
 import com.msg.gfo_v2.gfo.data.remote.dto.datasource.auth.response.RegisterResponse
 import retrofit2.Response
 
-interface CommonDataSource {
+interface AuthDataSource {
     suspend fun postRegistration(body : RegisterRequest): Response<RegisterResponse>
 
     suspend fun postEmail(body: CodeIssuanceRequest): Response<Void>
