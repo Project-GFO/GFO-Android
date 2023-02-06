@@ -14,3 +14,8 @@ interface AuthAPI {
         @Body body : RegisterRequest
     ) : Response<RegisterResponse>
 
+    @POST("auth")
+    suspend fun postLogin(
+        @Body body: LoginRequest
+    ): Response<LoginResponse>
+}
