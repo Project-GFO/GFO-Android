@@ -8,4 +8,7 @@ interface UserAPI {
 
     @GET("user/my")
     suspend fun getUserInfo(): Response<UserInfoResponse>
+
+    @DELETE("user")
+    suspend fun deleteUser(): Response<Void>
 }

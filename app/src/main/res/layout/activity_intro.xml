@@ -33,6 +33,37 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideStart"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideEnd"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75" />
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_login"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:text="@string/action_log_in"-->
+<!--            app:layout_constraintTop_toTopOf="@id/loginT"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/loginB"-->
+<!--            app:layout_constraintStart_toStartOf="@id/guideStart"-->
+<!--            app:layout_constraintEnd_toEndOf="@id/guideEnd" />-->
+<!--        <Button-->
+<!--            android:id="@+id/btn_sign"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:text="@string/action_sign_in"-->
+<!--            app:layout_constraintTop_toTopOf="@id/registerT"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/registerB"-->
+<!--            app:layout_constraintStart_toStartOf="@id/guideStart"-->
+<!--            app:layout_constraintEnd_toEndOf="@id/guideEnd" />-->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

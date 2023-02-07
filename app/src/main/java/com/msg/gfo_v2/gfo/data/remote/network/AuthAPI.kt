@@ -11,11 +11,13 @@ interface AuthAPI {
 
     @POST("auth/signup")
     suspend fun postRegistration(
-        @Body body : RegisterRequest
-    ) : Response<RegisterResponse>
+        @Body body: RegisterRequest
+    ): Response<RegisterResponse>
+
 
     @POST("auth")
     suspend fun postLogin(
         @Body body: LoginRequest
     ): Response<LoginResponse>
+
 }

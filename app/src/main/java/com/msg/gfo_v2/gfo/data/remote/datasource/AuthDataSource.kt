@@ -11,6 +11,8 @@ interface AuthDataSource {
 
     suspend fun headCheckCode(email: String, code: String): Response<Void>
 
+    suspend fun postVerifyCode(body: VerifyCodeRequest): Response<Void>
+
     suspend fun postLogout(): Response<Void>
 
     suspend fun postRefresh(): Response<RegisterResponse> }

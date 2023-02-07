@@ -6,6 +6,7 @@ import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.POST
+import retrofit2.http.Query
 
 interface PostingAPI {
 
@@ -15,5 +16,7 @@ interface PostingAPI {
     ): Response<Void>
 
     @GET("posting/my")
-    suspend fun getMyPost(): Response<List<MyPostResponse>>
+    suspend fun getMyPost(
+        @Query("ty") ty: String
+    ): Response<List<MyPostResponse>>
 }
