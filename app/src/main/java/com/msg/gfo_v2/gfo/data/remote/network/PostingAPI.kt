@@ -13,7 +13,7 @@ interface PostingAPI {
     @POST("posting/comment")
     suspend fun postComment(
         @Body body: CommentRequest
-    ): Response<Void>
+    ): Response<Unit>
 
     @GET("posting/my")
     suspend fun getMyPost(

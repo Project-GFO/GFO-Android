@@ -10,5 +10,5 @@ interface UserAPI {
     suspend fun getUserInfo(): Response<UserInfoResponse>
 
     @DELETE("user")
-    suspend fun deleteUser(): Response<Void>
+    suspend fun deleteUser(): Response<Unit>
 }

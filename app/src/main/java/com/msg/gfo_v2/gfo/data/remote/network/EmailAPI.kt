@@ -12,7 +12,7 @@ interface EmailAPI {
     @POST("email/verify")
     suspend fun postVerifyCode(
         @Body body: VerifyCodeRequest
-    ): Response<Void>
+    ): Response<Unit>
 
     @HEAD("email")
     suspend fun headCheckCode(
