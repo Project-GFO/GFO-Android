@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GFO-v2</string>
+    <string name="app_name">GFO</string>
     <string name="title_activity_intro">IntroActivity</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
