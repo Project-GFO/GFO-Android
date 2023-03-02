@@ -208,31 +208,6 @@
             app:layout_constraintGuide_percent="0.105" />
 
 
-        <View
-            android:id="@+id/btn_back"
-            android:layout_width="18dp"
-            android:layout_height="0dp"
-            android:background="@drawable/arrow_left"
-            android:onClick="@{login::onClickPageBtn}"
-            app:layout_constraintTop_toTopOf="@id/g_tv_login_t"
-            app:layout_constraintBottom_toBottomOf="@id/g_tv_login_b"
-            app:layout_constraintStart_toStartOf="@id/g_et_s"
-            app:layout_constraintEnd_toEndOf="@id/g_view_e" />
-        
-        <TextView
-            android:id="@+id/tv_goback"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:text="@string/action_log_in"
-            android:textSize="18sp"
-            android:textColor="@color/black"
-            android:fontFamily="@font/notosans"
-            android:onClick="@{login::onClickPageBtn}"
-            app:layout_constraintTop_toTopOf="@id/g_tv_login_t"
-            app:layout_constraintBottom_toBottomOf="@id/g_tv_login_b"
-            app:layout_constraintStart_toStartOf="@id/g_tv_login_s"
-            app:layout_constraintEnd_toEndOf="@id/g_tv_login_e" />
-
         <Button
             android:id="@+id/btn_login"
             android:layout_width="0dp"
@@ -278,17 +253,17 @@
             android:id="@+id/gsm_"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/notosanssymbols_600"
+            android:gravity="top"
+            android:lineSpacingExtra="-49px"
             android:text="@string/gsm_"
             android:textAppearance="@style/gsm_"
-            android:fontFamily="@font/notosanssymbols_600"
             android:textStyle="bold"
-            android:lineSpacingExtra="-49px"
-            android:gravity="top"
-            android:autoSizeTextType="uniform"
-            app:layout_constraintTop_toTopOf="@id/g_gsm_t"
             app:layout_constraintBottom_toBottomOf="@id/g_gsm_b"
+            app:layout_constraintEnd_toEndOf="@id/g_gsm_e"
             app:layout_constraintStart_toStartOf="@id/g_et_s"
-            app:layout_constraintEnd_toEndOf="@id/g_gsm_e"/>
+            app:layout_constraintTop_toTopOf="@id/g_gsm_t" />
 
         <EditText
             android:id="@+id/et_email"
