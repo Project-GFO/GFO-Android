@@ -9,7 +9,7 @@ import javax.inject.Inject
 class PostDataSourceImpl @Inject constructor(
     private val service: PostingAPI
 ): PostDataSource {
-    override suspend fun postComment(body: CommentRequest): Response<Void> {
+    override suspend fun postComment(body: CommentRequest): Response<Unit> {
         return service.postComment(body)
     }
 

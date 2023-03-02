@@ -5,7 +5,7 @@ import com.msg.gfo_v2.gfo.data.remote.dto.datasource.auth.response.MyPostRespons
 import retrofit2.Response
 
 interface PostDataSource {
-    suspend fun postComment(body: CommentRequest): Response<Void>
+    suspend fun postComment(body: CommentRequest): Response<Unit>
 
     suspend fun getMyPost(ty: String): Response<List<MyPostResponse>>
 }

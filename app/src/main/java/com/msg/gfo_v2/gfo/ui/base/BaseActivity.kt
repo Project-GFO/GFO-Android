@@ -1,7 +1,6 @@
 package com.msg.gfo_v2.gfo.ui.base
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.widget.Toast
 import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity

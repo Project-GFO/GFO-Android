@@ -19,15 +19,15 @@ class AuthDataSourceImpl @Inject constructor(
         return authService.postLogin(body)
     }
 
-    override suspend fun headCheckCode(email: String, code: String): Response<Void> {
+    override suspend fun headCheckCode(email: String, code: String): Response<Unit> {
         return emailService.headCheckCode(email, code)
     }
 
-    override suspend fun postVerifyCode(body: VerifyCodeRequest): Response<Void> {
+    override suspend fun postVerifyCode(body: VerifyCodeRequest): Response<Unit> {
         return emailService.postVerifyCode(body)
     }
 
-    override suspend fun postLogout(): Response<Void> {
+    override suspend fun postLogout(): Response<Unit> {
         TODO("Not yet implemented")
     }
 

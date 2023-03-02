@@ -9,10 +9,10 @@ interface AuthDataSource {
 
     suspend fun postLogin(body: LoginRequest): Response<LoginResponse>
 
-    suspend fun headCheckCode(email: String, code: String): Response<Void>
+    suspend fun headCheckCode(email: String, code: String): Response<Unit>
 
-    suspend fun postVerifyCode(body: VerifyCodeRequest): Response<Void>
+    suspend fun postVerifyCode(body: VerifyCodeRequest): Response<Unit>
 
-    suspend fun postLogout(): Response<Void>
+    suspend fun postLogout(): Response<Unit>
 
     suspend fun postRefresh(): Response<RegisterResponse> }

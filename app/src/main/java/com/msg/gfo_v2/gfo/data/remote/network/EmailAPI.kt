@@ -18,5 +18,5 @@ interface EmailAPI {
     suspend fun headCheckCode(
         @Query("email") email: String,
         @Query("code") code: String
-    ): Response<Void>
+    ): Response<Unit>
 }
