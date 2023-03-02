@@ -24,7 +24,7 @@
     <string name="member_ask">아직 회원이 아니신가요?</string>
     <string name="auto_login">자동로그인</string>
     <string name="save_id">아이디저장</string>
-    <string name="forgot_password_e">Forgot Password?</string>
-    <string name="auth_check_alert">등록할때 사용했던 학교 이메일로 인증을 통해 비밀번호를 \n바꿀 수 있습니다. 전송된 인증번호를 확인해주세요.</string>
+    <string name="write_email">이메일을 입력해 주세요.</string>
+    <string name="auth_check_alert">등록할때 사용했던 학교 이메일을 작성해 주세요.</string>
     <string name="gfo_start">GSM에게만 \n열린 포럼, GFO \n지금 질문하러 가볼까요?</string>
     </resources>
