@@ -13,9 +13,7 @@ class FindPasswordActivity : BaseActivity<ActivityFindPasswordBinding>(R.layout.
         // test
     }
 
-    override fun observeEvent() {
-
-    }
+    override fun observeEvent() {}
 
     fun onClickPageBtn(view : View){
         finish()
