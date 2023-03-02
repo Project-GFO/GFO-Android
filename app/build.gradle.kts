@@ -94,4 +94,6 @@ dependencies {
     implementation(Dependency.Coroutine.COROUTINE)
 
     implementation(Dependency.Lottie.LOTTIE)
+
+    kapt("org.xerial:sqlite-jdbc:3.34.0")
 }

@@ -5,7 +5,6 @@ import android.view.View
 import com.msg.gfo_v2.R
 import com.msg.gfo_v2.databinding.ActivityLoginBinding
 import com.msg.gfo_v2.gfo.ui.base.BaseActivity
-import com.msg.gfo_v2.gfo.ui.component.intro.IntroActivity
 import com.msg.gfo_v2.gfo.ui.component.main.MainActivity
 import com.msg.gfo_v2.gfo.ui.component.register.RegisterActivity
 
@@ -31,9 +30,6 @@ class LoginActivity : BaseActivity<ActivityLoginBinding>(R.layout.activity_login
             }
             binding.btnRegister.id -> {
                 act = RegisterActivity::class.java
-            }
-            binding.btnBack.id, binding.tvGoback.id -> {
-                act = IntroActivity::class.java
             }
         }
         val intent = Intent(this, act)
