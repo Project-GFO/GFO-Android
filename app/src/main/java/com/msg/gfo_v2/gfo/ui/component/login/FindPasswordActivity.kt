@@ -22,7 +22,7 @@ class FindPasswordActivity : BaseActivity<ActivityFindPasswordBinding>(R.layout.
     private fun onConfirmBtnClicked() {
         binding.btnConfirm.setOnClickListener {
             emailCheck()
-            startActivity(Intent(this, ResetPasswordActivity::class.java))
+            startActivity(Intent(this, CodeCheckActivity::class.java))
         }
     }
 

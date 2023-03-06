@@ -14,9 +14,7 @@ class LoginActivity : BaseActivity<ActivityLoginBinding>(R.layout.activity_login
         binding.login = this
     }
 
-    override fun observeEvent() {
-
-    }
+    override fun observeEvent() {}
 
     fun onClickPageBtn(view: View) {
         lateinit var act: Class<*>
