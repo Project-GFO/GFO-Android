@@ -210,7 +210,7 @@
             app:layout_constraintStart_toStartOf="@id/g_et_s"
             app:layout_constraintEnd_toEndOf="@id/g_et_e" />
         <EditText
-            android:id="@+id/g_et_email"
+            android:id="@+id/et_email"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@drawable/bg_edittext"

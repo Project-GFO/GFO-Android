@@ -11,7 +11,7 @@ class AuthDataSourceImpl @Inject constructor(
     private val authService: AuthAPI,
     private val emailService: EmailAPI
 ) : AuthDataSource {
-    override suspend fun postRegistration(body: RegisterRequest): Response<RegisterResponse> {
+    override suspend fun postRegistration(body: RegisterRequest): Response<Unit> {
         return authService.postRegistration(body)
     }
 

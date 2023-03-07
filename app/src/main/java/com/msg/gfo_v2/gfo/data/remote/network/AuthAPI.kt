@@ -12,7 +12,7 @@ interface AuthAPI {
     @POST("auth/signup")
     suspend fun postRegistration(
         @Body body: RegisterRequest
-    ): Response<RegisterResponse>
+    ): Response<Unit>
 
 
     @POST("auth")
