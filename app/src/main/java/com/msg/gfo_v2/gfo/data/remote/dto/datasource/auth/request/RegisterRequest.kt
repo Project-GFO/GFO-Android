@@ -9,8 +9,4 @@ data class RegisterRequest(
     var name: String,
     @SerializedName("password")
     var password: String,
-    @SerializedName("duty")
-    var duty: String,
-    @SerializedName("classNum")
-    var classNum: Long
 )

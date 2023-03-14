@@ -47,9 +47,7 @@ class RegisterActivity : BaseActivity<ActivityRegisterBinding>(R.layout.activity
             val userInfo = RegisterRequest(
                 name,
                 email,
-                password,
-                " ",
-                0
+                password
             )
             registerViewModel.login(userInfo)
         }
