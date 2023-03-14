@@ -17,6 +17,7 @@ abstract class DataSourceModule {
         commonDatasourceImpl: AuthDataSourceImpl
     ): AuthDataSource
 
+    @Binds
     abstract fun providePostDataSource(
         postDataSourceImpl: PostDataSourceImpl
     ): PostDataSource
