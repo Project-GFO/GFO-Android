@@ -17,6 +17,7 @@ android {
         versionCode = 1
         versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField("String", "BASE_URL", getApiKey("BASE_URL"))
     }
 
     buildTypes {
@@ -96,4 +97,8 @@ dependencies {
     implementation(Dependency.Lottie.LOTTIE)
 
     kapt("org.xerial:sqlite-jdbc:3.34.0")
+}
+
+fun getApiKey(propertyKey: String): String {
+    return com.android.build.gradle.internal.cxx.configure.gradleLocalProperties(rootDir).getProperty(propertyKey)
 }
