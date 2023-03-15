@@ -38,7 +38,10 @@ class RegistrationViewModel @Inject constructor(
 
     fun login(clientInfo: RegisterRequest){
         viewModelScope.launch {
-            registerUseCase.postRegistration(clientInfo)
+            registerUseCase(clientInfo)
+                .onSuccess {
+                
+            }
         }
     }
 
